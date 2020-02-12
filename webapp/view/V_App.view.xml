@@ -1,0 +1,34 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ampPrayerTime.controller.V_App" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<SearchField width="100%" placeholder="Search" id="__field0" search="_onSearch"/>
+					<ObjectHeader title="{/city}" intro="{/country}" introActive="true" titleActive="true" id="__header0" icon="{/icon}" iconActive="true"/>
+					<Table items="{/items}" columns="{/cols}" id="__table0">
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text maxLines="0" text="{date}"/>
+									<Text maxLines="0" text="{fajr}"/>
+									<Text maxLines="0" text="{shurooq}"/>
+									<Text maxLines="0" text="{dhuhr}"/>
+									<Text maxLines="0" text="{asr}"/>
+									<Text maxLines="0" text="{maghrib}"/>
+									<Text maxLines="0" text="{isha}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+						<columns>
+							<Column>
+								<header>
+									<Label text="{name}"/>
+								</header>
+							</Column>
+						</columns>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
